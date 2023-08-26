@@ -36,39 +36,41 @@ python -m flask run
 ## API Endpoint
 
 You can also interact with the API programmatically using tools like Postman. Here's how:
-    **Endpoint**
-    URL: http://127.0.0.1:5000/api/predict_symptom
-    Method: POST
-    Data Format: JSON
-    
-**Request Body**
+### Endpoint
 
-    ```json
+- **URL**: `http://127.0.0.1:5000/api/predict_symptom`
+- **Method**: POST
+- **Data Format**: JSON
 
-    {
-    "sentence": "I have a headache and fever."
-    }
-    ```
-**Response Example**
+### Request Body
 
-    ```json
+```json
+{
+  "sentence": "I have a headache and fever."
+}
+```
 
-    {
-    "response": "It looks like you have [disease name]."
-    }
-    ```
+### Response Example
+
+```json
+{
+  "response": "It looks like you have [disease name]."
+}
+```
 
 ## Frontend Integration
 
 If you're a frontend developer, here's how you can integrate the chatbot in your web application:
 
-    Display a welcome message to users, instructing them on how to use the chatbot.
+1. Display a welcome message to users, instructing them on how to use the chatbot.
 
-Welcome! What symptoms are you currently experiencing? When you've entered all of your symptoms, please write 'Done'. Make sure you enter as many symptoms as possible for a more accurate prediction.
+```
+Welcome! What symptoms are you currently experiencing? When you've entered all of your symptoms, please write '<b>Done</b>'. Make sure you enter as many symptoms as possible for a more accurate prediction.
+```
 
-    Collect user input for symptoms and send it to the API endpoint using the appropriate HTTP requests.
+2. Collect user input for symptoms and send it to the API endpoint using the appropriate HTTP requests.
 
-    Display the API response to the user.
+3. Display the API response to the user.
 
 ## Model Training
 
@@ -101,4 +103,3 @@ Ensemble learning combines multiple machine learning models to improve predictio
 ## Credits
 
 - The neural network model for symptom prediction is based on the work by [Maja Benkus] from the University of Zagreb, Croatia. (https://github.com/mbenkus).
-
