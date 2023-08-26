@@ -1,0 +1,163 @@
+{% extends "sms_broadcast_base.html" %}
+
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+  integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+  integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+<body>
+	{% csrf_token %}
+	<div class="container">
+		<br />
+		<h3 align="center">SMS Broadcast request review</h3>
+		<br />
+		<form id="sms-broadcast-form" accept-charset="utf-8">
+			<h4>Text: </h4>
+			<div class="">
+				<textarea id="text" rows="3" cols="60" name="text"></textarea>
+			</div>
+			<h4>Target:</h4>
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" value="municipality" name="target" checked>
+				<label class="custom-control-label" for="municipality">Municipality</label>
+				<br>
+				<select id="select-municipality" placeholder="Pick a municipality...">
+					<option value="">Select a Municipality...</option>
+					{% for municipality in municipalities %}
+					<option value="{{municipality.id}}" selected>{{municipality.name}}</option>
+					{% endfor  %}
+				</select>
+				<div class="custom-control custom-radio">
+					&emsp;<input type="radio" class="custom-control-input" value="REGISTERED_CITIZENS"
+						name="citizen_group">
+					<label class="custom-control-label" for="registered_citizens">Registered citizens</label>
+				</div>
+
+
+				<div class="custom-control custom-radio">
+					&emsp;<input type="radio" class="custom-control-input" value="FOLLOWING_CITIZENS"
+						name="citizen_group" checked>
+					<label class="custom-control-label" for="following_citizens">Following citizens</label>
+				</div>
+		
+			</div>
+
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" value="ALL_CITIZENS" name="target">
+				<label class="custom-control-label" for="ALL_CITIZENS">All citizens</label>
+			</div>
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" value="INACTIVE_CITIZENS" name="target">
+				<label class="custom-control-label" for="INACTIVE_CITIZENS">Inactive Citizens, </label>
+				
+					<label>for the last (Number of days):</label>
+					<input value="0" id="nb_days" type="number">
+				
+			</div>
+			
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" value="CUSTOM" name="target">
+				<label class="custom-control-label" for="CUSTOM">Custom (Comma sperated values)</label>
+				<br />
+				<textarea id="phone_numbers" rows="3" cols="60"></textarea>
+			</div>
+
+			<div class="custom-control custom-radio">
+				<label>Schedule on: </label>
+				<input id="scheduled_on" type="datetime">
+			</div>
+			<br>
+			<br>
+			<button align="center" type="submit" class="btn btn-success">Send</button>
+			<button align="center" type="submit" id="sendnow" class="btn btn-primary">Send Now</button>
+		</form>
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+
+	
+	let tn_datetime_str = new Date().toLocaleString("sv-SE");
+	document.getElementById('scheduled_on').value = tn_datetime_str;
+	
+	$('#sendnow').click(function(){
+		let tn_datetime_str = new Date().toLocaleString("sv-SE");
+		document.getElementById('scheduled_on').value = tn_datetime_str;
+		
+	});
+
+	$(document).ready(function () {
+		function getCookie(name) {
+			var cookieValue = null;
+			if (document.cookie && document.cookie != '') {
+				var cookies = document.cookie.split(';');
+				for (var i = 0; i < cookies.length; i++) {
+					var cookie = jQuery.trim(cookies[i]);
+					// Does this cookie string begin with the name we want?
+					if (cookie.substring(0, name.length + 1) == (name + '=')) {
+						cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+						break;
+					}
+				}
+			}
+			return cookieValue;
+		}
+		var csrftoken = getCookie('csrftoken');
+		function csrfSafeMethod(method) {
+			return (/^(HEAD|OPTIONS|TRACE)$/.test(method));
+		}
+		$.ajaxSetup({
+			beforeSend: function (xhr, settings) {
+				if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+					xhr.setRequestHeader("X-CSRFToken", csrftoken);
+				}
+			}
+		});
+
+		
+
+		$("#sms-broadcast-form").submit(function (event) {
+			event.preventDefault();
+			var target = $('input[name=target]:checked').val()
+			var nb_days = $('#nb_days').val()
+			if (nb_days==0){nb_days=null}
+			var data = {
+				text: $('#text').val(),
+				target: target,
+				number_of_days:nb_days,
+				scheduled_on: $("#scheduled_on").val(),
+			}
+			if (target == "municipality") {
+				data['target'] = $('input[name=citizen_group]:checked').val()
+				data['municipality'] = $(".item").attr("data-value")
+			}
+			if (target == "CUSTOM") {
+				numbers = $('#phone_numbers').val().split(',')
+				data['phone_numbers'] = numbers.map(function (number) {
+					number = number.replace(/ /g, '')
+					return { 'number': number }
+				})
+			}
+		
+			$.ajax({
+				url: "/api/sms-broastcast-request/",
+				method: "POST",
+				data: JSON.stringify(data),
+				contentType: 'application/json; charset=utf-8',
+				dataType: 'json',
+				error: function (e) {
+					alert(e.responseJSON.non_field_errors[0])
+					console.log(e)
+				}
+			})
+		});
+
+
+	});
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% load status_translation %}
+{% load url_generator %}
+
+{% if complaint.category.name %}
+    <b>تصنيف التشكي </b> : {{ complaint.category.name }}<br/>
+
+{% endif %}
+{% if complaint.sub_category.name %}
+    <b> التصنيف الفرعي</b> : {{ complaint.sub_category.name }}<br/>
+{% endif %}
+<b> التفاصيل</b> :{{ complaint.problem }}<br/>
+{% if complaint.solution %}
+    <b> الحل المقترح</b> : {{ complaint.solution }}<br/>
+{% endif %}
+{% if complaint.address %}
+    <b> العنوان</b> : {{ complaint.address }}<br/>
+{% endif %}
+<b> الوضعية</b> : {{ complaint.status | status_translate }}<br/>
+{% if complaint.operation_updates.first.note %}
+    <b> ملاحظة المعالجة</b> : {{ complaint.operation_updates.first.note }}<br/>
+{% endif %}
+{% if complaint.operation_updates.first.created_by.get_full_name %}
+    <b> تم المعالجة من طرف</b> : {{ complaint.operation_updates.first.created_by.get_full_name }}<br/>
+{% endif %}
+
+{% if complaint.longitude and complaint.latitude %}
+    <b> موقع الGPS</b> :
+    <a href="https://www.google.com/maps/?q={{ complaint.latitude }},{{ complaint.longitude }}">الرابط google maps </a>
+    <br/>
+
+{% endif %}
+
+{% if complaint.image %}
+    <b> صورة المشكل</b> : <a href="{{ complaint.image.url | url_generator }}">الرابط لصورة المشكل</a>
+    <br/>
+    <hr/>
+    <img src="{{ complaint.image.url | url_generator }}" style="display: block;
+                 height: 300px;"/>
+    <br/>
+    <hr/>
+
+{% endif %}

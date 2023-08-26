@@ -1,0 +1,34 @@
+{% extends  'base_email_template.html' %}
+
+
+{% block title %}
+                                تذكير بتحيين {% if  object.count == 1 %}تشكي {% else %}تشكيات {% endif %} بصدد المعالجة منذ <b style="color: red">{{nb_days}} {% if nb_days <= 10 %}أيام{% endif %}{% if nb_days > 10 %}يوم{% endif %}</b> عبر حساب البلدية الرقمية ل<span style="color: #5caad2;">{{ municipality.name }}</span>
+{%  endblock %}
+{% block content %}
+    <div> تحية طيبة،<br/>
+
+    </div>
+    <br/>
+    <br/>
+    <div>
+        لم يتم تحيين وضعية {% if  object.count == 1 %}تشكي {% else %}تشكيات {% endif %} بصدد المعالجة
+        منذ <b style="color: red">{{ nb_days }} {% if nb_days <= 10 %}أيام{% endif %}{% if nb_days > 10 %}يوم{% endif %}
+    </b> على الحساب الرقمي لبلدية<b style="color: red"> {{ municipality.name }}</b>
+        <br/>
+        <br/>
+        <br/>
+         {% for obj in object %}
+            <b>{{ forloop.counter }}/التاريخ و التوقيت</b> : {{ obj.created_at |date:"H:i ~~ d / m / Y  " }}<br/>
+         {% include 'shared/user_info.html' with user=obj.created_by %}
+
+         {% include 'shared/complaint_info.html' with complaint=obj %}
+            <br/>
+        يمكنك إعلام المواطنين بمستجدات معالجة المشكل أو لتغيير حالته إلى “تم حل المشكل“/“تعذر على البلدية حل المشكل”
+            <a href="{{ base_url }}{{ obj.id }}">من خلال هذا الرابط.</a>
+            <br/>
+            <br/>
+            <br/>
+        {% endfor %}
+    </div>
+
+{% endblock %}

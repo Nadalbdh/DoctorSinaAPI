@@ -1,0 +1,33 @@
+{% extends "admin/change_list.html" %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+{% endblock %}
+
+{% block result_list %}
+    <form method="post" action="" id="changelist-search">
+        {% if export_kpi_form %}
+            <div class="search-bar">
+                <label for="{{ export_kpi_form.created_at.id_for_label }}" style="color: white;">Created after date:</label>
+                {{ export_kpi_form.created_at }}
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        flatpickr("#{{ export_kpi_form.created_at.id_for_label }}", {
+                            dateFormat: "Y-m-d",
+                            allowInput: true,
+                        });
+                    });
+                </script>
+            </div>
+        {% endif %}
+        {{ block.super }}
+
+        {% if file_error %}
+            <div class="error-message">
+                {{ file_error }}
+            </div>
+        {% endif %}
+    </form>
+{% endblock %}

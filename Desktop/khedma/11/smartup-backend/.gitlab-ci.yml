@@ -1,0 +1,54 @@
+stages:
+  - test
+  - static_analysis
+  - build
+  - release
+  - deploy
+
+variables:
+  UPSTREAM_PROJECT: $CI_PROJECT_NAME
+
+include:
+  - project: elbaladiyaTN/elbaladiya.tn-devops
+    file: "pipeline/.py-lint.gitlab-ci.yml"
+    ref: "master"
+
+  - project: elbaladiyaTN/elbaladiya.tn-devops
+    file: "pipeline/.py.gitlab-ci.yml"
+    ref: "master"
+    
+sonarqube-check:
+  stage: test
+  script: 
+    - > 
+      /home/sonar-scanner/bin/sonar-scanner 
+      -D sonar.host.url=${SONAR_HOST_URL} 
+      -D sonar.login=${SONAR_TOKEN}
+      -D project.settings=sonar.properties
+
+  allow_failure: true
+  needs: ['Test Docker Container']
+  tags:
+    - machine
+    - dev
+  only:
+    - develop
+
+bridge deploy develop:
+  stage: deploy
+  trigger:
+    project: elbaladiyaTN/elbaladiya.tn-devops
+    branch: develop
+    strategy: depend
+  only:
+    - develop
+
+bridge deploy prod:
+  stage: deploy
+  trigger:
+    project: elbaladiyaTN/elbaladiya.tn-devops
+    branch: master
+    strategy: depend
+  only:
+    - master
+

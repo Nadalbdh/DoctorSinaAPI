@@ -1,0 +1,38 @@
+{% extends  'base_email_template.html' %}
+{% block title %}
+                               التقرير اليومي للمقترحات الوارداة لبلدية <span style="color: #5caad2;">{{ municipality.name }}</span>
+{%  endblock %}
+{% block content %}
+    <div> تحية طيبة،<br/>
+        {% if objects.posts %}
+            استقبل الحساب الرقمي لبلدية {{municipality.name}}
+              {% if comments_number > 1 %}
+            <span> في آخر  24  ساعة (عدد {{objects.posts.count}}) مقترحات:  </span><br/>
+                  {% else %}
+                  <span> في آخر  24  ساعة ( مقترح )  </span><br/>
+
+                  {% endif %}
+            {% for comment in objects.posts %}
+
+                    <strong>{{ forloop.counter }} /  العنوان :   {{ comment.title }}</strong> <br/>
+                    <strong>التاريخ و التوقيت</strong> : {{ comment.created_at|date:"H:i <> d / m / Y  "}}  <br/>
+                    <strong>اللجنة البلدية</strong>: {{ comment.committee.title|default_if_none:"--"}} <br/>
+                    <strong>الموضوع</strong> : {{ comment.body|default_if_none:"--"}} <br/>
+                    <strong>من طرف</strong> :  {{ comment.created_by.get_full_name|default:"--" }} <br/>
+                    يمكن التفاعل مع المقترح
+                    <a href="{{ base_url }}{{ comment.id }}">من خلال هذا الرابط</a>
+                    <br/>
+                    <br/>
+                    <br/>
+            {% endfor %}
+        {% endif %}
+
+        {% if objects.interactions %}
+            تم التفاعل مع المقترحات ذات العناوين التالية : <br/>
+            {% for interaction in objects.interactions %}
+                {{ forloop.counter }} - مقترح "{{ interaction.title|truncatechars:50 }}" عبر {{ interaction.count_recent }} تعاليق. <a href="{{ base_url }}{{ interaction.id }}">تفاعل عبر هذا الرابط</a>
+                <br/>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}

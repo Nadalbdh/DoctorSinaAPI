@@ -1,0 +1,3502 @@
+[
+  {
+    "model": "backend.municipality",
+    "pk": 1,
+    "fields": {
+      "name": "تونس العاصمة",
+      "city": "تونس",
+      "is_active": 0,
+      "name_fr": "Tunis Ville"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 2,
+    "fields": {
+      "name": "باردو",
+      "city": "تونس",
+      "is_active": 0,
+      "name_fr": "Le Bardo"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 3,
+    "fields": {
+      "name": "الكرم",
+      "city": "تونس",
+      "is_active": 0,
+      "name_fr": "EL kram"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 4,
+    "fields": {
+      "name": "حلق الوادي",
+      "city": "تونس",
+      "is_active": 0,
+      "name_fr": "La Goulette"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 5,
+    "fields": {
+      "name": "قرطاج",
+      "city": "تونس",
+      "is_active": 0,
+      "name_fr": "Carthage"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 6,
+    "fields": {
+      "name": "سيدي بوسعيد",
+      "city": "تونس",
+      "is_active": 0,
+      "name_fr": "Sidi Bou Said"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 7,
+    "fields": {
+      "name": "المرسى",
+      "city": "تونس",
+      "is_active": 0,
+      "name_fr": "La Marsa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 8,
+    "fields": {
+      "name": "سيدي حسين",
+      "city": "تونس",
+      "is_active": 0,
+      "name_fr": "Sidi Hassine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 9,
+    "fields": {
+      "name": "أريانة",
+      "city": "أريانة",
+      "is_active": 0,
+      "name_fr": "Ariana"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 10,
+    "fields": {
+      "name": "سكرة",
+      "city": "أريانة",
+      "is_active": 0,
+      "name_fr": "Soukra"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 11,
+    "fields": {
+      "name": "رواد",
+      "city": "أريانة",
+      "is_active": 0,
+      "name_fr": "Raoued"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 12,
+    "fields": {
+      "name": "قلعة الأندلس",
+      "city": "أريانة",
+      "is_active": 0,
+      "name_fr": "Kalaat El Andalos"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 13,
+    "fields": {
+      "name": "سيدي ثابت",
+      "city": "أريانة",
+      "is_active": 0,
+      "name_fr": "Sidi Thabet"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 14,
+    "fields": {
+      "name": "التضامن",
+      "city": "أريانة",
+      "is_active": 0,
+      "name_fr": "Ettadhamen"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 15,
+    "fields": {
+      "name": "المنيهلة",
+      "city": "أريانة",
+      "is_active": 0,
+      "name_fr": "El Mnihla"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 16,
+    "fields": {
+      "name": "بن عروس",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Ben Arous"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 17,
+    "fields": {
+      "name": "المروج",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "El Mourouj"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 18,
+    "fields": {
+      "name": "حمام الأنف",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Hammam Lif"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 19,
+    "fields": {
+      "name": "حمام الشط",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Hammam Chott"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 20,
+    "fields": {
+      "name": "بومهل البساتين",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Bou Mhel El Bassatine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 21,
+    "fields": {
+      "name": "الزهراء",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Ez-Zahra"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 22,
+    "fields": {
+      "name": "رادس",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Rades"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 23,
+    "fields": {
+      "name": "مقرين",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Megrine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 24,
+    "fields": {
+      "name": "المحمدية",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Mhamedia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 25,
+    "fields": {
+      "name": "مرناق",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Mornag"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 26,
+    "fields": {
+      "name": "الخليدية",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Khelidia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 27,
+    "fields": {
+      "name": "فوشانة",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Fouchana"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 28,
+    "fields": {
+      "name": "نعسان",
+      "city": "بن عروس",
+      "is_active": 0,
+      "name_fr": "Naassen"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 29,
+    "fields": {
+      "name": "منوبة",
+      "city": "منوبة",
+      "is_active": 0,
+      "name_fr": "Mannouba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 30,
+    "fields": {
+      "name": "الدندان",
+      "city": "منوبة",
+      "is_active": 0,
+      "name_fr": "Denden"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 31,
+    "fields": {
+      "name": "دوار هيشر",
+      "city": "منوبة",
+      "is_active": 0,
+      "name_fr": "Douar Hicher"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 32,
+    "fields": {
+      "name": "وادي الليل",
+      "city": "منوبة",
+      "is_active": 0,
+      "name_fr": "Oued Elli"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 33,
+    "fields": {
+      "name": "المرناقية",
+      "city": "منوبة",
+      "is_active": 0,
+      "name_fr": "Mornaguia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 34,
+    "fields": {
+      "name": "برج العامري",
+      "city": "منوبة",
+      "is_active": 0,
+      "name_fr": "Borj El Amri"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 35,
+    "fields": {
+      "name": "الجديدة",
+      "city": "منوبة",
+      "is_active": 0,
+      "name_fr": "Djedaïda"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 36,
+    "fields": {
+      "name": "طبربة",
+      "city": "منوبة",
+      "is_active": 0,
+      "name_fr": "Tebourba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 37,
+    "fields": {
+      "name": "البطان",
+      "city": "منوبة",
+      "is_active": 0,
+      "name_fr": "El Battan"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 38,
+    "fields": {
+      "name": "البساتين",
+      "city": "منوبة",
+      "is_active": 0,
+      "name_fr": "El Bassatine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 39,
+    "fields": {
+      "name": "نابل",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Nabeul"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 40,
+    "fields": {
+      "name": "دار شعبان",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Dar Chaabane"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 41,
+    "fields": {
+      "name": "بني خيار",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Beni Khiar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 42,
+    "fields": {
+      "name": "المعمورة",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "El Mâamoura"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 43,
+    "fields": {
+      "name": "الصمعة",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Somaâ"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 44,
+    "fields": {
+      "name": "قربة",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Korba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 45,
+    "fields": {
+      "name": "تازركة",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Tazeka"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 46,
+    "fields": {
+      "name": "منزل تميم",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Menzel Temime"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 47,
+    "fields": {
+      "name": "منزل حر",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Menzel Horr"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 48,
+    "fields": {
+      "name": "الميدة",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "El Mida"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 49,
+    "fields": {
+      "name": "قليبية",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Kelibia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 50,
+    "fields": {
+      "name": "أزمور",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Azmour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 51,
+    "fields": {
+      "name": "حمام الأغزام",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Hammam El Guezaz"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 52,
+    "fields": {
+      "name": "دار علوش",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Dar Allouch"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 53,
+    "fields": {
+      "name": "الهوارية",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "El Haouaria"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 54,
+    "fields": {
+      "name": "تاكلسة",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Takelsa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 55,
+    "fields": {
+      "name": "سليمان",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Soliman"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 56,
+    "fields": {
+      "name": "قربص",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Korbous"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 57,
+    "fields": {
+      "name": "منزل بوزلفة",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Menzel Bou Zelfa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 58,
+    "fields": {
+      "name": "بني خلاد",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Beni Khalled"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 59,
+    "fields": {
+      "name": "زاوية الجديدي",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Zaouiet Djedidi"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 60,
+    "fields": {
+      "name": "قرنبالية",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Grombalia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 61,
+    "fields": {
+      "name": "بوعرقوب",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Bou Argoub"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 62,
+    "fields": {
+      "name": "الحمامات",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Hammamet"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 63,
+    "fields": {
+      "name": "فندق الجديد - سلتان",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Fondek Ejedid - Es Selten"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 64,
+    "fields": {
+      "name": "تزغران بوكريم زاوية المقايز",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Tazegrane Boukrim Zaouiet Mgaiez"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 65,
+    "fields": {
+      "name": "سيدي الجديدي",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Sidi Jedidi"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 66,
+    "fields": {
+      "name": "الشريفات بوشراي",
+      "city": "نابل",
+      "is_active": 0,
+      "name_fr": "Echerifet Boucharray "
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 67,
+    "fields": {
+      "name": "زغوان",
+      "city": "زغوان",
+      "is_active": 0,
+      "name_fr": "Zaghouan"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 68,
+    "fields": {
+      "name": "الزريبة",
+      "city": "زغوان",
+      "is_active": 0,
+      "name_fr": "Ez-Zeriba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 69,
+    "fields": {
+      "name": "بئر مشارقة",
+      "city": "زغوان",
+      "is_active": 0,
+      "name_fr": "Bir Mchergua"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 70,
+    "fields": {
+      "name": "جبل الوسط",
+      "city": "زغوان",
+      "is_active": 0,
+      "name_fr": "Jebel  Oust"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 71,
+    "fields": {
+      "name": "الفحص",
+      "city": "زغوان",
+      "is_active": 0,
+      "name_fr": "El Fahs"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 72,
+    "fields": {
+      "name": "الناظور",
+      "city": "زغوان",
+      "is_active": 0,
+      "name_fr": "En-Nadhour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 73,
+    "fields": {
+      "name": "صواف",
+      "city": "زغوان",
+      "is_active": 0,
+      "name_fr": "Saouaf"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 74,
+    "fields": {
+      "name": "العمايم",
+      "city": "زغوان",
+      "is_active": 0,
+      "name_fr": "El Amaiem"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 75,
+    "fields": {
+      "name": "بنزرت",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Bizerte"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 76,
+    "fields": {
+      "name": "سجنان",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Sedjnane"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 77,
+    "fields": {
+      "name": "ماطر",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Mateur"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 78,
+    "fields": {
+      "name": "منزل بورقيبة",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Menzel Bourguiba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 79,
+    "fields": {
+      "name": "تينجة",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Tinja"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 80,
+    "fields": {
+      "name": "غار الملح",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Ghar El Meleh"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 81,
+    "fields": {
+      "name": "عوسجة",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Ousja"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 82,
+    "fields": {
+      "name": "منزل جميل",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Menzel Djemil"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 83,
+    "fields": {
+      "name": "منزل عبد الرحمان",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Menzel Abderrahmen"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 84,
+    "fields": {
+      "name": "العالية",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "El Alia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 85,
+    "fields": {
+      "name": "راس الجبل",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Ras El Djebel"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 86,
+    "fields": {
+      "name": "الماتلين",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Metline"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 87,
+    "fields": {
+      "name": "رفراف",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Rafraf"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 88,
+    "fields": {
+      "name": "أوتيك",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Utique"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 89,
+    "fields": {
+      "name": "جومين",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Joumine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 90,
+    "fields": {
+      "name": "غزالة",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "Ghzala"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 91,
+    "fields": {
+      "name": "الحشاشنة",
+      "city": "بنزرت",
+      "is_active": 0,
+      "name_fr": "El Hchachna"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 92,
+    "fields": {
+      "name": "باجة",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Béja"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 93,
+    "fields": {
+      "name": "المعقولة",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "El Mâagoula"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 94,
+    "fields": {
+      "name": "زهرة مدين",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Zahret Medien"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 95,
+    "fields": {
+      "name": "نفزة",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Nefza"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 96,
+    "fields": {
+      "name": "تبرسق",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Teboursouk"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 97,
+    "fields": {
+      "name": "تستور",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Testour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 98,
+    "fields": {
+      "name": "قبلاط",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Goubellat"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 99,
+    "fields": {
+      "name": "مجاز الباب",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Medjez El Bab"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 100,
+    "fields": {
+      "name": "تيبار",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Tibar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 101,
+    "fields": {
+      "name": "وشتاتة - الجميلة",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Ouechtata - El Jamila"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 102,
+    "fields": {
+      "name": "سيدي إسماعيل",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Sidi Ismail"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 103,
+    "fields": {
+      "name": "السلوقية",
+      "city": "باجة",
+      "is_active": 0,
+      "name_fr": "Slouguia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 104,
+    "fields": {
+      "name": "جندوبة",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Jendouba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 105,
+    "fields": {
+      "name": "بوسالم",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Bou Salem"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 106,
+    "fields": {
+      "name": "طبرقة",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Tabarka"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 107,
+    "fields": {
+      "name": "عين دراهم",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Ain Draham"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 108,
+    "fields": {
+      "name": "فرنانة",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Fernana"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 109,
+    "fields": {
+      "name": "بني مطير",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Beni M'tir"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 110,
+    "fields": {
+      "name": "غار الدماء",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Ghardimaou"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 111,
+    "fields": {
+      "name": "وادي مليز",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Oued Meliz"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 112,
+    "fields": {
+      "name": "بلطة بوعوان",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Balta -Bouaouene"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 113,
+    "fields": {
+      "name": "سوق السبت",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Souk Es-Sabet"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 114,
+    "fields": {
+      "name": "القلعة - المعدن - فرقصان",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "El Golaa - El Maaden -Forgassen"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 115,
+    "fields": {
+      "name": "الجواودة",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Jaouaouada"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 116,
+    "fields": {
+      "name": "عين الصبح - الناظور",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Ain Es-Sobh - Nadhour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 117,
+    "fields": {
+      "name": "الخمايرية",
+      "city": "جندوبة",
+      "is_active": 0,
+      "name_fr": "Khemairia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 118,
+    "fields": {
+      "name": "الكاف",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Le Kef"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 119,
+    "fields": {
+      "name": "نبر",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Nebeur"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 120,
+    "fields": {
+      "name": "الطويرف",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Touiref"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 121,
+    "fields": {
+      "name": "ساقية سيدي يوسف",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Sakiet Sidi Youssef"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 122,
+    "fields": {
+      "name": "تاجروين",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Tajerouine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 123,
+    "fields": {
+      "name": "منزل سالم",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Menzel Salem"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 124,
+    "fields": {
+      "name": "قلعة السنان",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Kalâat Snan"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 125,
+    "fields": {
+      "name": "القلعة الخصباء",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Kalâat Khasba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 126,
+    "fields": {
+      "name": "الجريصة",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Djerissa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 127,
+    "fields": {
+      "name": "القصور",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "El Ksour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 128,
+    "fields": {
+      "name": "الدهماني",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Dahmani"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 129,
+    "fields": {
+      "name": "السرس",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Es-Sers"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 130,
+    "fields": {
+      "name": "الزعفران - دير الكاف",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Zâafrane - Dyr El Kef"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 131,
+    "fields": {
+      "name": "بهرة",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "Bahra"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 132,
+    "fields": {
+      "name": "المرجى",
+      "city": "الكاف",
+      "is_active": 0,
+      "name_fr": "El Marja"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 133,
+    "fields": {
+      "name": "سليانة",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "Siliana"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 134,
+    "fields": {
+      "name": "بوعرادة",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "Bou Arada"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 135,
+    "fields": {
+      "name": "قعفور",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "Gaâfour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 136,
+    "fields": {
+      "name": "الكريب",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "El Krib"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 137,
+    "fields": {
+      "name": "بورويس",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "Bourouis"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 138,
+    "fields": {
+      "name": "مكثر",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "Makthar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 139,
+    "fields": {
+      "name": "الروحية",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "Er-Rouhia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 140,
+    "fields": {
+      "name": "كسرى",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "Kesra"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 141,
+    "fields": {
+      "name": "برقو",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "Bargou"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 142,
+    "fields": {
+      "name": "العروسة",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "El Aroussa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 143,
+    "fields": {
+      "name": "سيدي مرشد",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "Sidi Morched"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 144,
+    "fields": {
+      "name": "الحبابسة",
+      "city": "سليانة",
+      "is_active": 0,
+      "name_fr": "El Hababsa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 145,
+    "fields": {
+      "name": "سوسة",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Sousse"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 146,
+    "fields": {
+      "name": "قصيبة الثريات",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Ksibet Thrayet"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 147,
+    "fields": {
+      "name": "الزهور",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Ezzouhour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 148,
+    "fields": {
+      "name": "زاوية سوسة",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Zaouiet Sousse"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 149,
+    "fields": {
+      "name": "حمام سوسة",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Hammam Sousse"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 150,
+    "fields": {
+      "name": "أكودة",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Akouda"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 151,
+    "fields": {
+      "name": "القلعة الكبيرة",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Kalâa Kébira"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 152,
+    "fields": {
+      "name": "سيدي بو علي",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Sidi Bou Ali"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 153,
+    "fields": {
+      "name": "هرقلة",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Hergla"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 154,
+    "fields": {
+      "name": "النفيضة",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Enfidha"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 155,
+    "fields": {
+      "name": "بوفيشة",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Bouficha"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 156,
+    "fields": {
+      "name": "سيدي الهاني",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Sidi El Heni"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 157,
+    "fields": {
+      "name": "مساكن",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "M'Saken"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 158,
+    "fields": {
+      "name": "القلعة الصغيرة",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Kalâa Seghira"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 159,
+    "fields": {
+      "name": "المسعدين",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Messâdine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 160,
+    "fields": {
+      "name": "كندار",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Kandar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 161,
+    "fields": {
+      "name": "القريمات هيشر",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Gerimet Hicher"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 162,
+    "fields": {
+      "name": "شط مريم",
+      "city": "سوسة",
+      "is_active": 0,
+      "name_fr": "Chott Meriam"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 163,
+    "fields": {
+      "name": "المنستير",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Monastir"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 164,
+    "fields": {
+      "name": "خنيس",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Khenis"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 165,
+    "fields": {
+      "name": "الوردانين",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Ouerdanine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 166,
+    "fields": {
+      "name": "الساحلين معتمر",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Sahline Môotmar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 167,
+    "fields": {
+      "name": "سيدي عامر",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Sidi Ameur"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 168,
+    "fields": {
+      "name": "زرمدين",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Zermadine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 169,
+    "fields": {
+      "name": "بني حسان",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Beni Hassen"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 170,
+    "fields": {
+      "name": "غنادة",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Ghnada"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 171,
+    "fields": {
+      "name": "جمال",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Jamel"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 172,
+    "fields": {
+      "name": "منزل كامل",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Menzel Kamel"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 173,
+    "fields": {
+      "name": "زاوية قنطش",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Zouiet Kontoch"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 174,
+    "fields": {
+      "name": "بنبلة والمنارة",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Bembla et Manara"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 175,
+    "fields": {
+      "name": "منزل نور",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Menzel En-Nour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 176,
+    "fields": {
+      "name": "المصدور",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "EL Masdour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 177,
+    "fields": {
+      "name": "مكنين",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Moknine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 178,
+    "fields": {
+      "name": "سيدي بنور",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Sidi Bennour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 179,
+    "fields": {
+      "name": "منزل فارسي",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Menzel Farsi"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 180,
+    "fields": {
+      "name": "عميرة الفحول",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Amiret El Fhoul"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 181,
+    "fields": {
+      "name": "عميرة الطوازرة",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Amiret Touazra"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 182,
+    "fields": {
+      "name": "عميرة الحجاج",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Amirat Hojjaj"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 183,
+    "fields": {
+      "name": "الشراحيل",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Cherahil"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 184,
+    "fields": {
+      "name": "البقالطة",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Bekalta"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 185,
+    "fields": {
+      "name": "طبلبة",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Teboulba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 186,
+    "fields": {
+      "name": "قصر هلال",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Ksar Helal"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 187,
+    "fields": {
+      "name": "قصيبة المديوني",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Ksibt El Mediouni"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 188,
+    "fields": {
+      "name": "بنان بوضر",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Benen Bodher"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 189,
+    "fields": {
+      "name": "طوزة",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Touza"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 190,
+    "fields": {
+      "name": "صيادة",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Sayada"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 191,
+    "fields": {
+      "name": "لمطة",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Lamta"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 192,
+    "fields": {
+      "name": "بوحجر",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Bou-Hajar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 193,
+    "fields": {
+      "name": "منزل حياة",
+      "city": "المنستير",
+      "is_active": 0,
+      "name_fr": "Menzel Hayet"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 194,
+    "fields": {
+      "name": "المهدية",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Mahdia "
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 195,
+    "fields": {
+      "name": "رجيش",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Réjiche"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 196,
+    "fields": {
+      "name": "بومرداس",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Bou Merdes"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 197,
+    "fields": {
+      "name": "أولاد الشامخ",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Ouled Chamekh"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 198,
+    "fields": {
+      "name": "شربان",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Chorbane"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 199,
+    "fields": {
+      "name": "هبيرة",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Hebira"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 200,
+    "fields": {
+      "name": "السواسي",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Essouassi"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 201,
+    "fields": {
+      "name": "الجم",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "El Djem"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 202,
+    "fields": {
+      "name": "كركر",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Kerker"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 203,
+    "fields": {
+      "name": "الشابة",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Chebba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 204,
+    "fields": {
+      "name": "ملوش",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Melloulech"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 205,
+    "fields": {
+      "name": "سيد علوان",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Sidi Alouane"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 206,
+    "fields": {
+      "name": "قصور الساف",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Ksour Essef"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 207,
+    "fields": {
+      "name": "البرادعة",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "El Bradâa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 208,
+    "fields": {
+      "name": "سيدي زيد - أولاد مولاهم",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Sidi Zid-Ouled Moulahem"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 209,
+    "fields": {
+      "name": "الحكايمة",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "El Hekaima"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 210,
+    "fields": {
+      "name": "التلالسة",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Talalsa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 211,
+    "fields": {
+      "name": "زالبة",
+      "city": "المهدية",
+      "is_active": 0,
+      "name_fr": "Zalba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 212,
+    "fields": {
+      "name": "صفاقس",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Sfax"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 213,
+    "fields": {
+      "name": "ساقية الزيت",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Sakiet Ezzit"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 214,
+    "fields": {
+      "name": "الشيحية",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Chihia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 215,
+    "fields": {
+      "name": "ساقية الدائر",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Sakiet Eddaier"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 216,
+    "fields": {
+      "name": "قرمدة",
+      "city": "صفاقس",
+      "is_active": 1,
+      "name_fr": "Gremda"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 217,
+    "fields": {
+      "name": "العين",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "El ain"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 218,
+    "fields": {
+      "name": "طينة",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Tina"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 219,
+    "fields": {
+      "name": "عقارب",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Agareb"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 220,
+    "fields": {
+      "name": "جبنيانة",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Djebeniana"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 221,
+    "fields": {
+      "name": "الحنشة",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "El Hencha"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 222,
+    "fields": {
+      "name": "منزل شاكر",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Menzel Chaker"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 223,
+    "fields": {
+      "name": "الغريبة",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "El Gheraiba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 224,
+    "fields": {
+      "name": "بئر علي بن خليفة",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Bir Ali Ben Khelifa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 225,
+    "fields": {
+      "name": "الصخيرة",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Skhira"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 226,
+    "fields": {
+      "name": "المحرس",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Mahrès"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 227,
+    "fields": {
+      "name": "قرقنة",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Kerkennah"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 228,
+    "fields": {
+      "name": "العامرة",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "El Amra"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 229,
+    "fields": {
+      "name": "العوابد - الخزانات",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "El Aouabed-Khazanet"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 230,
+    "fields": {
+      "name": "الناظور - سيدي علي بالعابد",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "En-Nadhour-Sidi Ali Belabed"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 231,
+    "fields": {
+      "name": "الحاجب",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "El Hajeb"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 232,
+    "fields": {
+      "name": "الحزق - اللوزة",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "Hzag-Ellouza"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 233,
+    "fields": {
+      "name": "الأعشاش بوجربوع العوادنة ماجل درج",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "El Achech Boujarbouea El Aouadna Majel Edraj"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 234,
+    "fields": {
+      "name": "النصر",
+      "city": "صفاقس",
+      "is_active": 0,
+      "name_fr": "En-Nacer"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 235,
+    "fields": {
+      "name": "القيروان",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Kairouan"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 236,
+    "fields": {
+      "name": "الشبيكة",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Echbika"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 237,
+    "fields": {
+      "name": "السبيخة",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Sbikha"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 238,
+    "fields": {
+      "name": "الوسلاتية",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "El Oueslatia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 239,
+    "fields": {
+      "name": "عين جلولة",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Aïn Djeloula"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 240,
+    "fields": {
+      "name": "حفوز",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Haffouz"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 241,
+    "fields": {
+      "name": "العلا",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "El Alâa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 242,
+    "fields": {
+      "name": "حاجب العيون",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Hajeb El Ayoun"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 243,
+    "fields": {
+      "name": "نصر اللّة",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Nasrallah"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 244,
+    "fields": {
+      "name": "منزل مهيري",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Menzel Mehiri"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 245,
+    "fields": {
+      "name": "الشراردة",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Echrarda"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 246,
+    "fields": {
+      "name": "بوحجلة",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Bouhajla"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 247,
+    "fields": {
+      "name": "سيسب - الذريعات",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Sisseb-Ed-Dheriaat"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 248,
+    "fields": {
+      "name": "جهينة",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Jehina"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 249,
+    "fields": {
+      "name": "رقادة",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Rakada"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 250,
+    "fields": {
+      "name": "عبيدة",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Abida"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 251,
+    "fields": {
+      "name": "الشرايطية القصور",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Cheraitia El Ksour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 252,
+    "fields": {
+      "name": "العين البيضاء",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "El Aîn El Beidha"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 253,
+    "fields": {
+      "name": "الشواشي",
+      "city": "القيروان",
+      "is_active": 0,
+      "name_fr": "Chaouachi"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 254,
+    "fields": {
+      "name": "القصرين",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Kasserine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 255,
+    "fields": {
+      "name": "سبيطلة",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Sbeitla"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 256,
+    "fields": {
+      "name": "سبيبة",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Sbiba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 257,
+    "fields": {
+      "name": "جدليان",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Djedeliane"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 258,
+    "fields": {
+      "name": "تالة",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Thala"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 259,
+    "fields": {
+      "name": "حيدرة",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Hidra"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 260,
+    "fields": {
+      "name": "فوسانة",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Foussana"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 261,
+    "fields": {
+      "name": "فريانة",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Feriana"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 262,
+    "fields": {
+      "name": "تلابت",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Telept"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 263,
+    "fields": {
+      "name": "ماجل بالعباس",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Majel Bel Abbes"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 264,
+    "fields": {
+      "name": "العيون",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "El Ayoun"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 265,
+    "fields": {
+      "name": "حاسي الفريد",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Hassi El Farid"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 266,
+    "fields": {
+      "name": "الزهور",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Ez-Zouhour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 267,
+    "fields": {
+      "name": "النور",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "En-Nour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 268,
+    "fields": {
+      "name": "الشرائع - مشرق الشمس",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Ech-Charayaa- Machrek Ech-Chams"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 269,
+    "fields": {
+      "name": "الرخمات",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Er-Rakhmet"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 270,
+    "fields": {
+      "name": "عين الخمايسية",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Ain El Khemaissia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 271,
+    "fields": {
+      "name": "خمودة",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Khmouda"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 272,
+    "fields": {
+      "name": "بوزقام",
+      "city": "القصرين",
+      "is_active": 0,
+      "name_fr": "Bouzguam"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 273,
+    "fields": {
+      "name": "سيدي بوزيد",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Sidi Bouzid"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 274,
+    "fields": {
+      "name": "جلمة",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Jilma"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 275,
+    "fields": {
+      "name": "سبالة",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Cebalet"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 276,
+    "fields": {
+      "name": "بئر الحفي",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Bir El Hafey"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 277,
+    "fields": {
+      "name": "سيدي علي بن عون",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Sidi Ali Ben Aoun"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 278,
+    "fields": {
+      "name": "منزل بوزيان",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Menzel Bouzaine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 279,
+    "fields": {
+      "name": "المكناسي",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Meknassy"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 280,
+    "fields": {
+      "name": "المزونة",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Mezzouna"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 281,
+    "fields": {
+      "name": "الرقاب",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Regueb"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 282,
+    "fields": {
+      "name": "أولاد حفوز",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Ouled Haffouz"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 283,
+    "fields": {
+      "name": "السعيدة",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Essaaida"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 284,
+    "fields": {
+      "name": "سوق الجديد",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Souk Jedid"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 285,
+    "fields": {
+      "name": "الأسودة",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "EL Assouada"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 286,
+    "fields": {
+      "name": "الفائض بنور",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Faiedh Bennour"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 287,
+    "fields": {
+      "name": "باطن الغزال",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Batten  El Ghézel"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 288,
+    "fields": {
+      "name": "رحال",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "Rahal"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 289,
+    "fields": {
+      "name": "المنصورة",
+      "city": "سيدي بوزيد",
+      "is_active": 0,
+      "name_fr": "El Mansoura"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 290,
+    "fields": {
+      "name": "قابس",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Gabes"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 291,
+    "fields": {
+      "name": "شنني النحال",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Chenini Nahal"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 292,
+    "fields": {
+      "name": "غنوش",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Ghanouch"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 293,
+    "fields": {
+      "name": "المطوية",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "El Metouia"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 294,
+    "fields": {
+      "name": "وذرف",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Ouedhref"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 295,
+    "fields": {
+      "name": "الحامة",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "El Hamma"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 296,
+    "fields": {
+      "name": "مطماطة",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Matmata "
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 297,
+    "fields": {
+      "name": "مطماطة الجديدة",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Nouvelle Matmata"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 298,
+    "fields": {
+      "name": "مارث",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Mareth"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 299,
+    "fields": {
+      "name": "الزرات",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Ezzarat"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 300,
+    "fields": {
+      "name": "منزل الحبيب",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Menzel El Habib"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 301,
+    "fields": {
+      "name": "بوشمة",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Bou-chemma"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 302,
+    "fields": {
+      "name": "تبلبو",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Teboulbou"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 303,
+    "fields": {
+      "name": "الحبيب ثامر بوعطوش",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Habib ThameurBou Attouch"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 304,
+    "fields": {
+      "name": "كتانة",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Kattana"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 305,
+    "fields": {
+      "name": "دخيلة توجان",
+      "city": "قابس",
+      "is_active": 0,
+      "name_fr": "Dkhilet Toujane"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 306,
+    "fields": {
+      "name": "مدنين",
+      "city": "مدنين",
+      "is_active": 0,
+      "name_fr": "Mednine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 307,
+    "fields": {
+      "name": "بني خداش",
+      "city": "مدنين",
+      "is_active": 0,
+      "name_fr": "Beni Khedache"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 308,
+    "fields": {
+      "name": "بن قردان",
+      "city": "مدنين",
+      "is_active": 0,
+      "name_fr": "Ben Guerdane"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 309,
+    "fields": {
+      "name": "جرجيس",
+      "city": "مدنين",
+      "is_active": 0,
+      "name_fr": "Zarzis"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 310,
+    "fields": {
+      "name": "جربة حومة السوق",
+      "city": "مدنين",
+      "is_active": 0,
+      "name_fr": "Djerba Houmet Souk"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 311,
+    "fields": {
+      "name": "جربة ميدون",
+      "city": "مدنين",
+      "is_active": 0,
+      "name_fr": "Djerba Midoun"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 312,
+    "fields": {
+      "name": "جربة أجيم",
+      "city": "مدنين",
+      "is_active": 0,
+      "name_fr": "Djerba Ajim"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 313,
+    "fields": {
+      "name": "سيدي مخلوف",
+      "city": "مدنين",
+      "is_active": 0,
+      "name_fr": "Sidi Makhlouf"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 314,
+    "fields": {
+      "name": "جرجيس الشمالية",
+      "city": "مدنين",
+      "is_active": 0,
+      "name_fr": "Zarzis Nord"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 315,
+    "fields": {
+      "name": "بوغرارة",
+      "city": "مدنين",
+      "is_active": 0,
+      "name_fr": "Bou-Ghrara"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 316,
+    "fields": {
+      "name": "تطاوين",
+      "city": "تطاوين",
+      "is_active": 0,
+      "name_fr": "Tataouine"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 317,
+    "fields": {
+      "name": "بئر الأحمر",
+      "city": "تطاوين",
+      "is_active": 0,
+      "name_fr": "Bir Lahmar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 318,
+    "fields": {
+      "name": "غمراسن",
+      "city": "تطاوين",
+      "is_active": 0,
+      "name_fr": "Ghomrassen"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 319,
+    "fields": {
+      "name": "ذهيبة",
+      "city": "تطاوين",
+      "is_active": 0,
+      "name_fr": "Dhehiba"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 320,
+    "fields": {
+      "name": "رمادة",
+      "city": "تطاوين",
+      "is_active": 0,
+      "name_fr": "Remada"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 321,
+    "fields": {
+      "name": "الصمار",
+      "city": "تطاوين",
+      "is_active": 0,
+      "name_fr": "Smar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 322,
+    "fields": {
+      "name": "تطاوين الجنوبية",
+      "city": "تطاوين",
+      "is_active": 0,
+      "name_fr": "Tataouine Sud"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 323,
+    "fields": {
+      "name": "قفصة",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Gafsa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 324,
+    "fields": {
+      "name": "القصر",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "El Ksar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 325,
+    "fields": {
+      "name": "أم العرائس",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Oum El Araies"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 326,
+    "fields": {
+      "name": "الرديف",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Redeyef"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 327,
+    "fields": {
+      "name": "المتلوي",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Metlaoui"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 328,
+    "fields": {
+      "name": "المظيلة",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Mdhila"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 329,
+    "fields": {
+      "name": "القطار",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Guetar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 330,
+    "fields": {
+      "name": "السند",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Sned"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 331,
+    "fields": {
+      "name": "بلخير",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Belkhir"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 332,
+    "fields": {
+      "name": "سيدي عيش",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Sidi Aïch"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 333,
+    "fields": {
+      "name": "لالة",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Lala"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 334,
+    "fields": {
+      "name": "سيدي بوبكر",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Sidi Boubaker"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 335,
+    "fields": {
+      "name": "زانوش",
+      "city": "قفصة",
+      "is_active": 0,
+      "name_fr": "Zanouch"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 336,
+    "fields": {
+      "name": "توزر",
+      "city": "توزر",
+      "is_active": 0,
+      "name_fr": "Tozeur"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 337,
+    "fields": {
+      "name": "دقاش",
+      "city": "توزر",
+      "is_active": 0,
+      "name_fr": "De guech"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 338,
+    "fields": {
+      "name": "حامة الجريد",
+      "city": "توزر",
+      "is_active": 0,
+      "name_fr": "Hamet Jerid"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 339,
+    "fields": {
+      "name": "نفطة",
+      "city": "توزر",
+      "is_active": 0,
+      "name_fr": "Nefta"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 340,
+    "fields": {
+      "name": "تمغزة",
+      "city": "توزر",
+      "is_active": 0,
+      "name_fr": "Tameghza"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 341,
+    "fields": {
+      "name": "حزوة",
+      "city": "توزر",
+      "is_active": 0,
+      "name_fr": "Hazoua"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 342,
+    "fields": {
+      "name": "قبلي",
+      "city": "قبلي",
+      "is_active": 0,
+      "name_fr": "Kebili"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 343,
+    "fields": {
+      "name": "جمنة",
+      "city": "قبلي",
+      "is_active": 0,
+      "name_fr": "Jemna"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 344,
+    "fields": {
+      "name": "دوز",
+      "city": "قبلي",
+      "is_active": 0,
+      "name_fr": "Douz"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 345,
+    "fields": {
+      "name": "القلعة",
+      "city": "قبلي",
+      "is_active": 0,
+      "name_fr": "El Golâa"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 346,
+    "fields": {
+      "name": "سوق الأحد",
+      "city": "قبلي",
+      "is_active": 0,
+      "name_fr": "Souk El Ahad"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 347,
+    "fields": {
+      "name": "الفوار",
+      "city": "قبلي",
+      "is_active": 0,
+      "name_fr": "Faouar"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 348,
+    "fields": {
+      "name": "رجيم معتوق",
+      "city": "قبلي",
+      "is_active": 0,
+      "name_fr": "Rejim Maatoug"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 349,
+    "fields": {
+      "name": "بشلي - جرسين - البليدات",
+      "city": "قبلي",
+      "is_active": 0,
+      "name_fr": "Bechelli-Jersine-El Blidete"
+    }
+  },
+  {
+    "model": "backend.municipality",
+    "pk": 350,
+    "fields": {
+      "name": "بشري - فطناسة",
+      "city": "قبلي",
+      "is_active": 0,
+      "name_fr": "Bèchri-Fatnassa "
+    }
+  }
+]

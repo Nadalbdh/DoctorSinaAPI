@@ -1,0 +1,46 @@
+{% extends  'base_email_template.html' %}
+{% load dossier_types_translation %}
+{% block title %}
+     <tr>
+         <td align="center" style="color: #343434; font-size: 24px; font-family: Quicksand, Calibri, sans-serif; font-weight:700;letter-spacing: 3px; line-height: 35px;" class="main-header">
+
+
+                        <div style="line-height: 35px">
+
+                                تذكير بتحديث وضعية مطلب الرخصة عبر حساب البلدية الرقمية ل<span style="color: #5caad2;">{{ municipality.name }}</span>
+
+                        </div>
+                    </td>
+                </tr>
+{%  endblock %}
+{% block content %}
+    <div> تحية طيبة،<br/>
+
+    </div>
+    <br/>
+    <br/>
+    <div>
+
+        لم يتم تحديث وضعية مطلب الرخصة  <b style="color: red">{{ object.to_dict.problem }}</b> منذ
+         <b style="color: red">{{ nb_days }} {% if nb_days <= 10 %}أيام{% endif %}{% if nb_days > 10 %}يوم{% endif %}
+    </b>
+
+        <br/>
+        <br/>
+        <b> صاحب المطلب</b>: {{ object.name }}
+        <br/>
+        <b> رقم المعرّف</b>:{{ object.unique_identifier }}
+        <br/>
+        <b> نوعية الرخصة</b>:{{ object.type | dossier_type_translate }}
+        <br/>
+        <br/>
+
+        يمكنك تفقد بقية تفاصيل المطلب و الإجابة عنه
+
+        <a href="{{ base_url }}{{ object.id }}">من خلال هذا الرابط.</a>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+
+{% endblock %}

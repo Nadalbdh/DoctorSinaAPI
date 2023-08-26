@@ -1,0 +1,47 @@
+{% extends  'base_email_template.html' %}
+{% load status_translation %}
+{% block title %}
+      التقرير اليومي لمطالب النفاذ للمعلومة الواردة ل<span style="color: #5caad2;">{{ municipality.name }}</span>
+{%  endblock %}
+{% block content %}
+    <div dir="rtl">
+    <div> تحية طيبة،<br/>
+        {% if count < 2 %}
+                        استقبل الحساب الرقمي لبلدية : <b style="font-size: 1.3em; color: red">{{ municipality.name }}</b> في آخر <b style="font-size: 1.3em; color: red">{{ hours }}</b> ساعة  <b style="font-size: 1.3em; color: red">مطلب نفاذ للمعلومة</b>
+
+        {% elif count < 3 %}
+            استقبل الحساب الرقمي لبلدية : <b style="font-size: 1.3em; color: red">{{ municipality.name }}</b> في آخر <b style="font-size: 1.3em; color: red">{{ hours }}</b> ساعة <b style="font-size: 1.3em; color: red">مطلبين نفاذ للمعلومة</b>
+
+        {% else %}
+            استقبل الحساب الرقمي لبلدية : <b style="font-size: 1.3em; color: red">{{ municipality.name }}</b> في آخر <b style="font-size: 1.3em; color: red">{{ hours }}</b> ساعة <b style="font-size: 1.3em; color: red"> {{ count }} </b> <b style="font-size: 1.3em; color: red">مطالب نفاذ للمعلومة</b>
+
+        {% endif %}
+
+
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    {% for sub in objects %}
+        <div>
+            <b>{{ forloop.counter }}/ التاريخ و التوقيت</b> : {{ sub.created_at |date:"H:i <> d / m / Y  " }}<br/>
+            {% include 'shared/user_info.html' with user=sub.created_by %}
+            {% include 'shared/subject_access_info.html' with subject_access=sub %}
+
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    {% endfor %}
+    <div>
+        <br/>
+        <br/>
+        <b>نذكركم بكل ود بالأجل القانوني للرد على مطالب النفاذ إلى المعلومة المحدد ب 20 يوم.</b>
+    <br/>
+    <br/>
+    <br/>
+    </div>
+    </div>
+{% endblock %}

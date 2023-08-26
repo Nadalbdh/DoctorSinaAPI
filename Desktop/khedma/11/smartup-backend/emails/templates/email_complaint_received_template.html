@@ -1,0 +1,37 @@
+{% extends  'base_email_template.html' %}
+{% load status_translation %}
+{% load url_generator %}
+{% block title %}
+                                تذكير بورود  {% if  object.count == 1 %}تشكي {% else %}تشكيات {% endif %}  منذ         <b style="color: red">{{nb_days}} {% if nb_days <= 10 %}أيام{% endif %}{% if nb_days > 10 %}يوم{% endif %}</b>
+ عبر حساب البلدية الرقمية ل<span style="color: #5caad2;">{{ municipality.name }}</span>
+{%  endblock %}
+{% block content %}
+    <div> تحية طيبة،<br/>
+    </div>
+    <br/>
+    <br/>
+        <div>
+
+
+             لم يتم التفاعل مع   {% if  object.count == 1 %}التشكي الوارد{% else %}تشكيات واردة {% endif %}  منذ  <b style="color: red">{{nb_days}} {% if nb_days <= 10 %}أيام{% endif %}{% if nb_days > 10 %}يوم{% endif %}
+            </b> على الحساب الرقمي لبلدية<b style="color: red"> {{municipality.name}}</b>
+            <br/>
+            <br/>
+            <br/>
+
+         {% for obj in object %}
+            <b>{{ forloop.counter }}/التاريخ و التوقيت</b> : {{ obj.created_at |date:"H:i ~~ d / m / Y  " }}<br/>
+            {% include 'shared/user_info.html' with user=obj.created_by %}
+            {% include 'shared/complaint_info.html' with complaint=obj %}
+             <br/>
+       لتأكيد الإطلاع، ننصح بتغيير حالة التشكي  إلى "بصدد المعالجة" ،
+يمكن تصفح التشكي ، تغيير حالته و تحرير رد
+            <a href="{{ base_url }}{{ obj.id }}">من خلال هذا الرابط.</a>
+            <br/>
+            <br/>
+            <br/>
+        {% endfor %}
+
+        </div>
+
+{% endblock %}

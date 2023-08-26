@@ -1,0 +1,18 @@
+{% extends "admin/login.html" %} {% block extrastyle %} {{ block.super }}
+<style>
+  #header {
+    background-color: transparent !important;
+    display: block;
+  }
+</style>
+{% endblock %} {% block branding %}
+<h1>
+  <small>{% block head_title %}{% endblock %}</small>
+</h1>
+{% endblock %} {% block content_title %}
+<img
+  width="300px"
+  style="display: block; margin-left: auto; margin-right: auto; width: 50%"
+  src="https://idara.elbaladiya.tn/assets/images/logo.svg"
+/>
+{% endblock %}

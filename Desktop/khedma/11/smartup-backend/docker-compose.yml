@@ -1,0 +1,49 @@
+version: "3.7"
+
+x-app: &base
+  build:
+    context: .
+  restart: unless-stopped
+  volumes:
+    - .:/backend
+  working_dir: /backend
+  env_file:
+    - .env
+  depends_on:
+    - redis
+    - db
+    
+services:
+
+  db:
+    image: postgres:12.0-alpine
+    restart: unless-stopped
+    volumes:
+      - ./data/:/var/lib/postgresql/
+    expose:
+      - 5432
+    env_file:
+      - .env
+
+  redis: # broker + cache 
+    image: redis:7-alpine
+    restart: always
+    expose:
+      - 6379
+    volumes: 
+      - ./redis-data:/data
+
+  backend:
+    <<: *base
+    ports:
+      - 8001:8000
+    command: python manage.py runserver 0.0.0.0:8000
+
+  worker:
+    <<: *base
+    command: celery -A settings worker -B -l INFO
+
+  beat:
+    <<: *base
+    command: celery -A settings beat -l INFO --scheduler django_celery_beat.schedulers:DatabaseScheduler
+

@@ -1,0 +1,121 @@
+[
+    {
+        "model": "backend.NewsTag",
+        "pk": 1,
+        "fields": {
+            "name": "إنجازات بلدية"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 2,
+        "fields": {
+            "name": "عمل اللجان"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 3,
+        "fields": {
+            "name": "شراكات"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 4,
+        "fields": {
+            "name": "ملتقيات و ندوات"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 5,
+        "fields": {
+            "name": "تفاعل مع المواطنين"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 6,
+        "fields": {
+            "name": "تعاون مع المجتمع المدني"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 7,
+        "fields": {
+            "name": "إزالة نقطة سوداء"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 8,
+        "fields": {
+            "name": "تنوير"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 9,
+        "fields": {
+            "name": "تعبيد"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 10,
+        "fields": {
+            "name": "متابعة مشاريع"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 11,
+        "fields": {
+            "name": "تحسين خدمات"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 12,
+        "fields": {
+            "name": "رقمنة"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 13,
+        "fields": {
+            "name": "تحقيق وعود"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 14,
+        "fields": {
+            "name": "متابعة أسواق"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 15,
+        "fields": {
+            "name": "أنشطة تشاركية"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 16,
+        "fields": {
+            "name": "أنشطة رياضية"
+        }
+    },
+    {
+        "model": "backend.NewsTag",
+        "pk": 17,
+        "fields": {
+            "name": "أنشطة دولية"
+        }
+    }
+]

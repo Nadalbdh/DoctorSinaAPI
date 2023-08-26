@@ -1,0 +1,40 @@
+{% extends  'base_email_template.html' %}
+{% load status_translation %}
+{% load url_generator %}
+{% block title %}
+      التقرير اليومي للتبليغات الرقمية الواردة ل<span style="color: #5caad2;">{{ municipality.name }}</span>
+{%  endblock %}
+{% block content %}
+    <div> تحية طيبة،<br/>
+
+          {% if count < 2 %}
+                        استقبل الحساب الرقمي لبلدية : <b style="font-size: 1.3em; color: red">{{ municipality.name }}</b> في آخر <b style="font-size: 1.3em; color: red">{{ hours }}</b> ساعة  <b style="font-size: 1.3em; color: red"> تبليغ عن المشكل</b>
+
+        {% elif count < 3 %}
+            استقبل الحساب الرقمي لبلدية : <b style="font-size: 1.3em; color: red">{{ municipality.name }}</b> في آخر <b style="font-size: 1.3em; color: red">{{ hours }}</b> ساعة <b style="font-size: 1.3em; color: red"> تبليغين عن المشاكل</b>
+
+        {% else %}
+            استقبل الحساب الرقمي لبلدية : <b style="font-size: 1.3em; color: red">{{ municipality.name }}</b> في آخر <b style="font-size: 1.3em; color: red">{{ hours }}</b> ساعة <b style="font-size: 1.3em; color: red"> {{ count }} </b> <b style="font-size: 1.3em; color: red"> تبليغات عن المشاكل</b>
+
+        {% endif %}
+
+
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    {% for obj in objects %}
+        <div>
+            <b>{{ forloop.counter }}/ التاريخ و التوقيت</b> : {{ obj.created_at |date:"H:i <> d / m / Y  " }}<br/>
+            {% include 'shared/user_info.html' with user=obj.created_by %}
+            {% include 'shared/complaint_info.html' with complaint=obj %}
+            يمكنك تفقد بقية تفاصيل المشكل و معالجته
+            <a href="{{ base_url }}{{ obj.id }}">من خلال هذا الرابط.</a>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    {% endfor %}
+{% endblock %}

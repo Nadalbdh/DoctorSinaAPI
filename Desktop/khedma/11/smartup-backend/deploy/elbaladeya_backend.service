@@ -1,0 +1,15 @@
+[Unit]
+Description=smartup-backend daemon
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/home/elbaladiya/smartup-backend
+ExecStart=/home/elbaladiya/smartup-backend/venv/bin/gunicorn --access-logfile /var/log/smartup-backend/gunicorn_access.log --error-logfile /var/log/smartup-backend/gunicorn_errors.log --workers 4 --bind 0.0.0.0:7000 settings.wsgi:application
+
+
+
+[Install]
+WantedBy=multi-user.target
+

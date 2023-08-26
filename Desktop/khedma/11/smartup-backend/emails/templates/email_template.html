@@ -1,0 +1,84 @@
+{% load macros %}
+{% macro total_delta dict %} {{ dict.total  }} {% if dict.delta > 0 %} (+{{ dict.delta  }}) {% endif %} {% endmacro %}
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>EMail</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+            your experience.
+            </p>
+        <![endif]-->
+
+        <div dir="rtl">
+            <h1> العنوان: الإحصائيات الخاصة بحساب {{  municipality_name }} بتاريخ {{ today|date:"d/m/Y" }} </h1>
+            <div>
+                تحية طيبة، <br />
+            نمدكم بإحصيات حساب {{  municipality_name }} على منصة البلدية الرقمية إلى حدود يوم {{ today|date:"d/m/Y" }} يتم إنشاء هذه
+            الإحصائيات بصفة آلية وفق المعطيات المخزنة. يصل هذا المايل {{  number_emails }} شخصا.
+            </div>
+            <h2>إحصاء كل الوارد [  إلى حدود {{ today|date:"d/m/Y" }} ] </h2>
+            <h3>عدد المستعملين و المتابعين </h3>
+            <ul>
+                {% with temp=summary.citizens.registered%}
+                <li>عدد المسجلين من متساكني البلدية : {% use_macro total_delta temp %} </li>
+                {% endwith %}
+                <li>عدد متابعي البلدية بصفة استثنائية : {{  summary.citizens.starred }} </li>
+                <li>عدد متابعي البلدية من مستعملي التطبيقة : {{  summary.citizens.followed }} </li>
+            </ul>
+            <h3>إحصائيات خدمة التبليغ عن الإشكاليات </h3>
+            <ul>
+                {% with temp=summary.complaints.all%}
+                <li>عدد الإشكاليات الواردة :{% use_macro total_delta temp %}</li>
+                {% endwith %}
+                <li>عدد الإشكاليات الغير مطلع عليها : {{  summary.complaints.received }} </li>
+                <li>عدد الإشكاليات الجاري معالجتها : {{  summary.complaints.processing }} </li>
+                <li>عدد الإشكاليات التي تم إغلاقها : {{  summary.complaints.accepted|add:summary.complaints.rejected }} (منها {{  summary.complaints.accepted }} بنجاح) </li>
+                <li>عدد الإشكاليات المتجاوز معالجتها 21 يوم دون رد نهائي : {{  summary.complaints.urgent }} </li>
+            </ul>
+            <h3>إحصائيات خدمة النفاذ إلى المعلومة </h3>
+            <ul>
+                {% with temp=summary.subject_access_requests.all  %}
+                <li>عدد مطالب النفاذ إلى المعلومة الواردة : {% use_macro total_delta temp %} </li>
+                {% endwith %}
+                <li>عدد مطالب النفاذ إلى المعلومة الغير مطلع عليها : {{  summary.subject_access_requests.received }} </li>
+                <li>عدد مطالب النفاذ إلى المعلومة الجاري معالجتها : {{  summary.subject_access_requests.processing }} </li>
+                <li>عدد مطالب النفاذ إلى المعلومة التي تم إغلاقها : {{  summary.subject_access_requests.accepted|add:summary.subject_access_requests.rejected }} (منها {{  summary.subject_access_requests.accepted }} بنجاح) </li>
+                <li>عدد مطالب النفاذ إلى المعلومة المتجاوز معالجتها 21 يوم دون رد نهائي : {{  summary.subject_access_requests.urgent }} </li>
+            </ul>
+            <h3>إحصائيات خدمة متابعة الملفات والرخص </h3>
+            <ul>
+                {% with temp=summary.dossiers  %}
+                <li>عدد مطالب الرخص المضافة : {% use_macro total_delta temp %} </li>
+                {% endwith %}
+            </ul>
+            <h3>إحصائيات الخدمات التشاركية </h3>
+            <ul>
+                {% with temp=summary.committees.reports  %}
+                <li>عدد المستجدات المضافة : {% use_macro total_delta temp %} </li>
+                {% endwith %}
+                {% with temp=summary.committees.reports  %}
+                <li>عدد محاضر الجلسات المضافة : {% use_macro total_delta temp %} </li>
+                {% endwith %}
+                {% with temp=summary.committees.forum.posts  %}
+                <li>عدد مواضيع المنتدى المضافة : {% use_macro total_delta temp %} </li>
+                {% endwith %}
+                {% with temp=summary.committees.forum.comments  %}
+                <li>عدد التعليقات المحدثة في المنتدى : {% use_macro total_delta temp %} </li>
+                {% endwith %}
+            </ul>
+        </div>
+    </body>
+</html>

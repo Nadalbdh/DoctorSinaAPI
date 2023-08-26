@@ -1,0 +1,132 @@
+{% extends "sms_broadcast_base.html" %}
+
+{% block content %}
+
+<body>
+	{% csrf_token %}
+	<div class="container">
+		<br />
+
+		<h3 align="center">SMS Broadcast request review</h3>
+		<br />
+		<div class="row">
+			<div class="col-md-12">
+				<div class="table-responsive">
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Municipality</th>
+								<th>Created By</th>
+								<th>Text</th>
+								<th>Quantity</th>
+								<th>Target</th>
+								<th>SMS Balance</th>
+								<th>Total consumption</th>
+								<th>Last SMS Broadcast</th>
+								<th>Status</th>
+								<th>Scheduled on</th>
+								<th>Approve</th>
+								<th>Decline</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		function getCookie(name) {
+			var cookieValue = null;
+			if (document.cookie && document.cookie != '') {
+				var cookies = document.cookie.split(';');
+				for (var i = 0; i < cookies.length; i++) {
+					var cookie = jQuery.trim(cookies[i]);
+					// Does this cookie string begin with the name we want?
+					if (cookie.substring(0, name.length + 1) == (name + '=')) {
+						cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+						break;
+					}
+				}
+			}
+			return cookieValue;
+		}
+		var csrftoken = getCookie('csrftoken');
+		function csrfSafeMethod(method) {
+			return (/^(HEAD|OPTIONS|TRACE)$/.test(method));
+		}
+		$.ajaxSetup({
+			beforeSend: function (xhr, settings) {
+				if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+					xhr.setRequestHeader("X-CSRFToken", csrftoken);
+				}
+			}
+		});
+		fetch_data();
+
+		function render_row(row) {
+			return `<tr><td>${row.id}</td><td>${row.municipality}</td><td>${row.created_by}</td><td>${row.text}</td><td>${row.quantity}</td><td>${row.target}</td>
+			<td>${row.municipality_sms_credit}</td><td>${row.municipality_total_sms_consumption}</td><td>${row.last_sms_broadcast}</td><td>${row.status}</td>
+			<td><input id=scheduled_on type="datetime-local" value="${row.scheduled_on}"></td>
+		<td><button type="button" name="approve" class="btn btn-success btn-xs approve ${row.status}" id=${row.id} disabled>approve</button></td>
+		<td><button type="button" name="decline" class="btn btn-danger btn-xs decline ${row.status}" id=${row.id} disabled>decline</button></td></tr>`
+		}
+
+		function fetch_data() {
+			$.ajax({
+				url: "/api/sms-broastcast-request/",
+				success: function (data) {
+					$('tbody').empty()
+					data.forEach(function (row, idx) {
+						$('tbody').append(render_row(row));
+					})
+					$('.PENDING').prop('disabled', false);
+				}
+			})
+		}
+
+		$(document).on('click', '.approve', function () {
+			var id = $(this).attr('id');
+			data = {
+				scheduled_on: $("#scheduled_on").val(),
+				status: "APPROVED"
+			}
+			$.ajax({
+				url: "/api/sms-broastcast-request/" + id + "/",
+				method: "PATCH",
+				data: JSON.stringify(data),
+				contentType: 'application/json; charset=utf-8',
+				dataType: 'json',
+				success: function (data) {
+					fetch_data();
+				},
+				cache: false
+			})
+		});
+
+		$(document).on('click', '.decline', function () {
+			var id = $(this).attr("id");
+			data = {
+				status: "DECLINED"
+			}
+			$.ajax({
+				url: "/api/sms-broastcast-request/" + id + "/",
+				method: "PATCH",
+				data: JSON.stringify(data),
+				contentType: 'application/json; charset=utf-8',
+				dataType: 'json',
+				success: function (data) {
+					fetch_data();
+				},
+				cache: false
+			});
+		});
+
+	});
+</script>
+{% endblock %}

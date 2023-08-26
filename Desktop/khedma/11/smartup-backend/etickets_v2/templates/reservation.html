@@ -1,0 +1,56 @@
+{% extends 'base_bootstrap.html' %}
+
+
+{% block title %}
+<title>E-ticket</title>
+{% endblock %}
+
+
+{% block content %}
+<style>
+    @import url('http://fonts.cdnfonts.com/css/digital-7-mono');
+
+    .bordered {
+        border: 4px solid #58C0E6;
+        border-radius: 20px;
+    }
+
+    .digital-font {
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 83px;
+    }
+
+    hr.dashed {
+        border-top: 1px dashed #a9a9a9;
+        width: 100%;
+    }
+</style>
+<div class="container">
+    <div class="row justify-content-center align-items-center flex-column">
+
+        <div class="col-12 bordered d-flex flex-column justify-content-center align-items-center mb-5 p-3">
+            <h1 style="font-weight: 700;">{{ service_name }}</h1>
+            <h2>بلدية {{ agency_name }} </h2>
+        </div>
+
+        <div id="ticket"
+            class="col-12 bordered d-flex flex-column justify-content-center align-items-center mt-3 p-3 my-2">
+            <img width="250px" src="https://www.elbaladiya.tn/assets/images/login/logo_with_slogan.png" />
+            <h2 class="my-1 mb-5 mt-5" style="color: #696874;">رقم التذكرة </h2>
+            <h1 class="digital-font mt-3 mb-5" style="font-size:8em">{{ ticket_num }}</h1>
+            <hr class="dashed m-1 mb-3" style="width: 50%;">
+            <h2 style="font-weight: 700;">{{ created_at }}</h2>
+            <h3>{{ created_at_time }}</h3>
+            <hr class="dashed m-1" style="width: 50%;">
+            <div style="transform: scale(3);">
+                {{ qr_code|safe }}
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

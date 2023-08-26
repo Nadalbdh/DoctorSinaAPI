@@ -1,0 +1,8 @@
+{% load status_translation %}
+{% if subject_access.structure %}
+    <b> الهيكل</b> : {{ subject_access.structure }}<br/>
+{% endif%}
+ <b> الوثيقة</b> :{{ subject_access.document }}<br/>
+<br/>
+يمكنك تفقد المطلب و الإجابة عنه
+<a href="{{ base_url }}{{ subject_access.id }}">من خلال هذا الرابط.</a>

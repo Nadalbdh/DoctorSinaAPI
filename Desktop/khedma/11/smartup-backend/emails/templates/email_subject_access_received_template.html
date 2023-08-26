@@ -1,0 +1,28 @@
+{% extends  'base_email_template.html' %}
+{% load status_translation %}
+{% block title %}
+      تذكير بورود مطلب نفاذ إلى المعلومة عبر حساب البلدية الرقمية ل<span style="color: #5caad2;">{{ municipality.name }}</span>
+{%  endblock %}
+{% block content %}
+    <div> تحية طيبة،<br/>
+
+    </div>
+    <br/>
+    <br/>
+        <div>
+             لم يتم الإجابة عن مطلب النفاذ إلى المعلومة الوارد  منذ  <b style="color: red">{{nb_days}} {% if nb_days <= 10 %}أيام{% endif %}{% if nb_days > 10 %}يوم{% endif %}
+            </b> على الحساب الرقمي لبلدية<b style="color: red"> {{municipality.name}}</b>
+            <br/>
+            <br/>
+            <br/>
+
+            <b>التاريخ و التوقيت</b> : {{ object.created_at |date:"H:i ~~ d / m / Y  " }}<br/>
+            {% include 'shared/user_info.html' with user=object.created_by %}
+            {% include 'shared/subject_access_info.html' with subject_access=object %}
+
+            <br/>
+            <br/>
+            <br/>
+        </div>
+
+{% endblock %}

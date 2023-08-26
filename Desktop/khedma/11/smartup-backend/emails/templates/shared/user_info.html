@@ -1,0 +1,9 @@
+{% if user.get_full_name  %}
+<b>الإسم واللقب</b> : {{ user.get_full_name  }}<br/>
+{% endif%}
+{% if user.username %}
+<b>رقم الهاتف</b> : {{ user.username }}<br/>
+{% endif%}
+{% if user.email %}
+<b>البريد الإلكتروني</b> : {{ user.email }}<br/>
+{% endif%}

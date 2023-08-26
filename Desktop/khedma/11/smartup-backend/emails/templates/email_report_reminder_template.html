@@ -1,0 +1,23 @@
+{% extends  'base_email_template.html' %}
+{% load status_translation %}
+{% block title %}
+      تذكير بإضافة  تقارير اجتماعات اللجان لبلدية<span style="color: #5caad2;"> {{ municipality.name }}</span>
+{%  endblock %}
+{% block content %}
+    <div> تحية طيبة،<br/>
+
+    </div>
+    <br/>
+    <br/>
+    <div>
+        لم يتم تنزيل تقارير اجتماعات اللجان المنقضية منذ <b style="color: red">{{ nb_days }} {% if nb_days <= 10 %}
+        أيام{% endif %}{% if nb_days > 10 %}يوم{% endif %}</b> على الحساب الرقمي لبلدية <b style="color: red">{{ municipality.name }}</b>.
+
+        <br/>
+        الرجاء إضافة التقارير   <a href="{{ base_url }}">من خلال هذا الرابط.</a>
+
+        <br/>
+        <br/>
+        <br/>
+    </div>
+{% endblock %}
