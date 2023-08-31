@@ -46,7 +46,7 @@ You can also interact with the API programmatically using tools like Postman. He
 
 ```json
 {
-  "sentence": "I have a headache and fever."
+  "sentence": "I have abdominal pain."
 }
 ```
 
@@ -54,7 +54,7 @@ You can also interact with the API programmatically using tools like Postman. He
 
 ```json
 {
-  "response": "It looks like you have [disease name]."
+  "response": "It looks like you have [symptom name]."
 }
 ```
 
@@ -62,15 +62,11 @@ You can also interact with the API programmatically using tools like Postman. He
 
 If you're a frontend developer, here's how you can integrate the chatbot in your web application:
 
-1. Display a welcome message to users, instructing them on how to use the chatbot.
+1. Send user input one by one to the API endpoint using the appropriate HTTP requests.
 
-```
-Welcome! What symptoms are you currently experiencing? When you've entered all of your symptoms, please write '<b>Done</b>'. Make sure you enter as many symptoms as possible for a more accurate prediction.
-```
+2. Display the API response (predicted symptom) to the user.
 
-2. Collect user input for symptoms and send it to the API endpoint using the appropriate HTTP requests.
-
-3. Display the API response to the user.
+3. When you're done listing symtoms sned the word ```done``` and the API will then return the predicted disease.
 
 ## Model Training
 
@@ -89,9 +85,11 @@ The training process involves the following steps:
 ## Symptom Prediction
 
 it  uses a trained model to predict diseases based on reported symptoms. The trained model can be saved and loaded for future use.
+
 ## Ensemble Learning
 
 Ensemble learning combines multiple machine learning models to improve prediction accuracy. It employs an ensemble of various models to achieve better disease prediction results.
+
 ## Developer Notes
 
 - The core logic of the chatbot can be found in the `app.py` file. The neural network model, symptom prediction, and response generation are implemented here.
@@ -103,3 +101,7 @@ Ensemble learning combines multiple machine learning models to improve predictio
 ## Credits
 
 - The neural network model for symptom prediction is based on the work by [Maja Benkus] from the University of Zagreb, Croatia. (https://github.com/mbenkus).
+
+## Contributors
+- Nada Labiadh
+- Samar Farhani
